@@ -4,7 +4,9 @@
   "description": "Convert TLE lists to CZML",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all watch",
+    "watch": "nodemon -w src -x \"npm run test\"",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,33 @@
   "bugs": {
     "url": "https://github.com/bowmanmc/tle2czml/issues"
   },
-  "homepage": "https://github.com/bowmanmc/tle2czml#readme"
+  "homepage": "https://github.com/bowmanmc/tle2czml#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^20.0.4",
+    "satellite.js": "^1.3.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "app/**/*.js",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "<rootDir>/coverage",
+    "coverageReporters": [
+      "html",
+      "text-summary"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js",
+      "<rootDir>/src/**/?(*.)(spec|test).js"
+    ],
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2"
+  }
 }
