@@ -1,0 +1,19 @@
+{
+  "name": "tle2czml",
+  "version": "1.0.0",
+  "description": "Convert TLE lists to CZML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bowmanmc/tle2czml.git"
+  },
+  "author": "Michael Bowman <bowmanmc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bowmanmc/tle2czml/issues"
+  },
+  "homepage": "https://github.com/bowmanmc/tle2czml#readme"
+}
