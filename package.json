@@ -28,7 +28,7 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "app/**/*.js",
+      "src/**/*.js",
       "!**/node_modules/**"
     ],
     "coverageDirectory": "<rootDir>/coverage",
