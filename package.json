@@ -4,7 +4,8 @@
   "description": "Convert TLE lists to CZML",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all watch",
+    "server:dev": "node tools/runBrowserSync.js",
+    "start": "npm-run-all --parallel watch server:dev",
     "watch": "nodemon -w src -x \"npm run test\"",
     "test": "jest"
   },
@@ -43,6 +44,7 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.12",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2"
   }

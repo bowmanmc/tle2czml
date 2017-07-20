@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Cesium Test</title>
+        <style>
+            @import url(Cesium/Widgets/widgets.css);
+            html, body, #map {
+                background: black;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+        </style>
+        <script src="Cesium/Cesium.js"></script>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script>
+            var viewer = new Cesium.Viewer('map');
+            viewer.dataSources.add(Cesium.CzmlDataSource.load('iss.czml'));
+        </script>
+    </body>
+</html>
