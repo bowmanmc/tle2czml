@@ -13,11 +13,6 @@
     }
   },
   {
-    "id":"9927edc4-e87a-4e1f-9b8b-0bfb3b05b227",
-    "name":"Accesses",
-    "description":"List of Accesses"
-  },
-  {
     "id":"Satellite/ISS",
     "name":"ISS",
     "availability":"2012-03-15T10:00:00Z/2012-03-16T10:00:00Z",

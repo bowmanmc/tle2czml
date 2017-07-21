@@ -16,6 +16,7 @@
         <div id="map"></div>
         <script>
             var viewer = new Cesium.Viewer('map');
+            viewer.scene.globe.enableLighting = true;
             viewer.dataSources.add(Cesium.CzmlDataSource.load('iss.czml'));
         </script>
     </body>

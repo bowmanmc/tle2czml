@@ -1,4 +1,4 @@
-import tle2czml from './index';
+import tle2czml from './tle2czml';
 
 describe('tle2czml()', () => {
     it('converts single tle', () => {
